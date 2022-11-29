@@ -1,0 +1,9 @@
+@import '../sass/variables';
+
+.app {
+    max-width: 1440px;
+    margin: auto;
+    background-color: $color-background;
+    display: flex;
+    flex-direction: column;
+}

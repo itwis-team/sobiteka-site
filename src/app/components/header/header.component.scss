@@ -1,0 +1,9 @@
+@import '../../../sass/variables';
+
+.header {
+    color: red;
+    &__item {
+        color: $color-text-orange;
+    }
+ 
+}
