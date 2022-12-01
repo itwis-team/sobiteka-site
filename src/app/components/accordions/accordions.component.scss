@@ -1,0 +1,33 @@
+.acc {
+  position: relative;
+  left: 0;
+  top: -100px;
+  margin: auto;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  border: 1px solid tomato;
+
+  &__title {
+    height: 25px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    font-weight: 22px;
+    background-color: darksalmon;
+  }
+
+  &__text {
+    display: none;
+    background-color: salmon;
+    margin: 0;
+    height: 50px;
+  }
+}
+
+.active {
+  display: flex;
+}

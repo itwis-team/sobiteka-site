@@ -1,1 +1,8 @@
-<a-component></a-component>
+<div *ngFor="let item of accordions; let idx = index">
+  <div class="acc">
+    <p class="acc__title" (click)="setActive(idx)">{{ item.title }}</p>
+    <p class="acc__text" [ngClass]="{ active: activeIdx === idx }">
+      {{ item.text }}
+    </p>
+  </div>
+</div>

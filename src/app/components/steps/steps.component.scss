@@ -1,30 +1,34 @@
 @import "../../../sass/variables";
 
 .steps {
-  z-index: 1;
+  position: relative;
+  z-index: 2;
   width: 100%;
+  margin-top: -170px;
+  min-height: 3248px;
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  align-items: center;
+  justify-content: start;
+  gap: 170px;
   background-image: url(../../../assets/steps.svg);
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 4000px;
-  position: relative;
-  top: -536px;
-  left: 0;
+  // top: -170px;
+  // left: 0;
 }
 
 .step {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 120px;
-  min-height: 614px;
+  gap: 100px;
+  // min-height: 614px;
 
   &:first-child {
-    padding-top: 690px;
+    padding-top: 320px;
     gap: 40px;
+    margin-top: 0;
   }
 
   &:nth-child(2) {
@@ -60,8 +64,6 @@
   }
 
   &__image {
-    width: 560px;
-    height: 614px;
   }
 
   span {
@@ -70,14 +72,15 @@
 }
 
 .step-bottom {
-  width: 100%;
   position: relative;
-  top: -1000px;
+  top: -100px;
   left: 0;
+  z-index: 1;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 210px;
+  gap: 120px;
   min-height: 460px;
   background-color: $color-light-orange;
 
