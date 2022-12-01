@@ -1,8 +1,20 @@
-<div *ngFor="let item of accordions; let idx = index">
-  <div class="acc">
-    <p class="acc__title" (click)="setActive(idx)">{{ item.title }}</p>
-    <p class="acc__text" [ngClass]="{ active: activeIdx === idx }">
-      {{ item.text }}
-    </p>
-  </div>
+<div class="accordion">
+  <h2 class="accordion__title">Частые вопросы</h2>
+  <ul class="accordion__list">
+    <li
+      *ngFor="let item of accordions; let idx = index"
+      class="accordion__item"
+    >
+      <div class="accordion__header" (click)="setActive(idx)">
+        <span>{{ idx + 1 + "." }}</span>
+        <p class="accordion__name">
+          {{ item.title }}
+        </p>
+        <img src="../../../assets/plus-icon.svg" alt="plus-icon" />
+      </div>
+      <p class="accordion__content" [ngClass]="{ active: activeIdx === idx }">
+        {{ item.content }}
+      </p>
+    </li>
+  </ul>
 </div>
