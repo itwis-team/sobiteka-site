@@ -1,0 +1,21 @@
+<button class="btn" *ngIf="title === 'ios'; else elseCase">
+  <span class="btn__load">Загрузить</span>
+  <p class="btn__title">App Store</p>
+  <img
+    src="../../../assets/app-store-icon.svg"
+    alt="btn-logo"
+    class="btn__logo"
+  />
+</button>
+
+<ng-template #elseCase>
+  <button class="btn">
+    <span class="btn__load">Загрузить</span>
+    <p class="btn__title">Google Play</p>
+    <img
+      src="../../../assets/google-play-icon.svg"
+      alt="btn-logo"
+      class="btn__logo"
+    />
+  </button>
+</ng-template>

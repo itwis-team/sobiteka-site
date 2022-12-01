@@ -1,0 +1,124 @@
+@import "../../../sass/variables";
+
+.steps {
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  background-image: url(../../../assets/steps.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 4000px;
+  position: relative;
+  top: -536px;
+  left: 0;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+  min-height: 614px;
+
+  &:first-child {
+    padding-top: 690px;
+    gap: 40px;
+  }
+
+  &:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+
+  &:nth-child(4) {
+    flex-direction: row-reverse;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 580px;
+  }
+
+  &__text {
+    width: 580px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 42px;
+    margin: 0;
+  }
+
+  &__caption {
+    margin: 20px 0 0 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  &__image {
+    width: 560px;
+    height: 614px;
+  }
+
+  span {
+    color: $color-text-orange;
+  }
+}
+
+.step-bottom {
+  width: 100%;
+  position: relative;
+  top: -1000px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 210px;
+  min-height: 460px;
+  background-color: $color-light-orange;
+
+  &__text {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  &__text:last-child {
+    transform: rotate(15deg);
+    text-align: center;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 590px;
+    align-items: start;
+  }
+
+  &__right {
+    width: 280px;
+    height: 280px;
+    background-image: url(../../../assets/circle.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__btns {
+    display: flex;
+    gap: 20px;
+  }
+
+  span {
+    color: $color-text-orange;
+  }
+}

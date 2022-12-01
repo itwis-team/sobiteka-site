@@ -1,0 +1,51 @@
+@import "../../../sass/variables";
+
+.btn {
+  width: 180px;
+  height: 60px;
+  padding: 10px 14px;
+  box-sizing: border-box;
+  text-align: start;
+  border: none;
+  background-color: $color-btn;
+  color: $color-text-white;
+  border-radius: 10px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 30px;
+  grid-template-areas:
+    "span logo"
+    "title logo";
+  cursor: pointer;
+  transition: 0.2s;
+  position: relative;
+  z-index: 1;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &__logo {
+    grid-area: logo;
+    width: 30px;
+    height: 26px;
+  }
+
+  &__title {
+    grid-area: title;
+    margin: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  &__load {
+    grid-area: span;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 0;
+  }
+}
