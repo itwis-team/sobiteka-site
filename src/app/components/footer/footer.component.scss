@@ -1,33 +1,39 @@
+@import "../../../sass/variables";
+
 .footer {
   width: 100%;
   min-height: 248px;
   margin: auto;
   background-image: url(../../../assets/footer-background.svg);
   background-repeat: no-repeat;
-  color: white;
+  color: $color-text-white;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  .wrapper {
-    width: 100%;
+  &__wrapper {
     margin: 0;
+    padding: 60px 130px 0;
+    max-width: 1180px;
+    width: 100%;
     display: flex;
-    gap: 120px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
 
   &__first-column {
-    width: 280px;
+    max-width: 280px;
     display: flex;
     flex-direction: column;
+    gap: 20px;
   }
 
   &__second-column {
-    margin: 0;
+    min-width: 280px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 16px;
   }
 
   &__third-column {
@@ -35,9 +41,30 @@
     gap: 20px;
   }
 
+  &__logo {
+    width: 216px;
+    height: 50px;
+  }
+
   &__caption {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
   }
 
   &__nav-item {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    transition: 0.7s;
+    cursor: pointer;
+  }
+
+  &__nav-item:hover {
+    opacity: 0.7;
   }
 }
