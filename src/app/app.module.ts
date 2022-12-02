@@ -6,6 +6,7 @@ import { AccordionsComponent } from './components/accordions/accordions.componen
 import { ButtonComponent } from './components/button/button.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
+import { HideMenuComponent } from './components/hide-menu/hide-menu.component';
 import { MainLayoutComponent } from './components/main-layout/main-layout.component';
 import { StepsComponent } from './components/steps/steps.component';
 
@@ -13,6 +14,7 @@ import { StepsComponent } from './components/steps/steps.component';
   declarations: [
     AppComponent,
     HeaderComponent,
+    HideMenuComponent,
     MainLayoutComponent,
     ButtonComponent,
     StepsComponent,

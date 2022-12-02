@@ -1,0 +1,17 @@
+<div class="hide-menu" [ngClass]="{ active: menuIsActive }">
+  <div class="hide-menu__container">
+    <div class="hide-menu__top">
+      <img
+        src="../../../assets/header-logo.svg"
+        alt="logo"
+        class="hide-menu__logo"
+      />
+      <div class="hide-menu__icon" (click)="toggleShowMenu()"></div>
+    </div>
+    <nav class="hide-menu__bottom">
+      <p class="hide-menu__link">О приложении</p>
+      <p class="hide-menu__link">Тарифный план</p>
+      <p class="hide-menu__link">Частые вопросы</p>
+    </nav>
+  </div>
+</div>

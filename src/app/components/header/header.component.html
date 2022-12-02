@@ -1,8 +1,14 @@
 <header class="header">
   <img src="../../../assets/header-logo.svg" alt="logo" class="header__logo" />
-  <ul class="header__nav">
-    <li class="header__link">О приложении</li>
-    <li class="header__link">Тарифный план</li>
-    <li class="header__link">Частые вопросы</li>
-  </ul>
+  <nav class="header__nav">
+    <p class="header__link">О приложении</p>
+    <p class="header__link">Тарифный план</p>
+    <p class="header__link">Частые вопросы</p>
+  </nav>
+  <div class="header__menu-icon" (click)="toggleShowMenu()"></div>
+  <app-hide-menu
+    *ngIf="menuIsActive"
+    [menuIsActive]="menuIsActive"
+    [toggleShowMenu]="toggleShowMenu"
+  ></app-hide-menu>
 </header>

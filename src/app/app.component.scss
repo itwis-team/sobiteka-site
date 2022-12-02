@@ -1,6 +1,7 @@
 @import "../sass/variables";
 
 .app {
+  position: relative;
   max-width: 1920px;
   margin: auto;
   background-color: $color-background;

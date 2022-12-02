@@ -1,11 +1,10 @@
 @import "../../../sass/variables";
 
 .header {
+  position: relative;
   height: 100px;
   padding: 0 130px;
   display: flex;
-  justify-content: center;
-  justify-content: space-between;
   align-items: center;
 
   &__logo {
@@ -14,11 +13,10 @@
   }
 
   &__nav {
+    margin-left: auto;
     display: flex;
     gap: 80px;
-    list-style: none;
     padding: 0;
-    margin: 0;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -32,5 +30,36 @@
 
   &__link:hover {
     opacity: 0.7;
+  }
+
+  &__menu-icon {
+    margin-left: auto;
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-image: url(../../../assets/hide-menu.svg);
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (max-width: 1280px) {
+    &__nav {
+      gap: 30px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    &__nav {
+      display: none;
+    }
+
+    &__menu-icon {
+      display: flex;
+    }
+  }
+
+  @media screen and (max-width: 769px) {
+    & {
+      padding: 0 92px;
+    }
   }
 }
