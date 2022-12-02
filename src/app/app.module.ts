@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AccordionsComponent } from './components/accordions/accordions.component';
 import { ButtonComponent } from './components/button/button.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MainLayoutComponent } from './components/main-layout/main-layout.component';
 import { StepsComponent } from './components/steps/steps.component';
@@ -15,12 +16,11 @@ import { StepsComponent } from './components/steps/steps.component';
     MainLayoutComponent,
     ButtonComponent,
     StepsComponent,
-    AccordionsComponent
+    AccordionsComponent,
+    FooterComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
