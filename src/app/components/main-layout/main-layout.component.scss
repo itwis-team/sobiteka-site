@@ -47,4 +47,27 @@
   span {
     color: $color-text-orange;
   }
+
+  @media screen and (max-width: 1000px) {
+    .main-layout {
+      &__bubbles {
+        display: none;
+      }
+
+      &__content {
+        padding-left: 93px;
+        width: 368px;
+      }
+
+      &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 46px;
+      }
+
+      &__caption {
+        width: 100%;
+      }
+    }
+  }
 }

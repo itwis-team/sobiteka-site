@@ -148,3 +148,75 @@
     gap: 80px;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .steps {
+    margin-top: -150px;
+    min-height: 2411px;
+    gap: 100px;
+    background-image: url(../../../assets/steps-1000.svg);
+  }
+
+  .step {
+    width: 560px;
+    gap: 30px;
+
+    &:first-child {
+      flex-direction: column;
+      gap: 70px;
+      padding-top: 310px;
+
+      .step__image {
+        width: 402px;
+        height: 465px;
+      }
+    }
+
+    &__image {
+      width: 224px;
+      height: 224px;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__text {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  .step-bottom {
+    top: -330px;
+    box-sizing: border-box;
+    height: 402px;
+    padding: 100px 0;
+    position: relative;
+
+    &__left {
+      width: 464px;
+    }
+
+    &__right {
+      width: 176px;
+      height: 176px;
+      background-image: url(../../../assets/circle.svg);
+      position: absolute;
+      top: 330px;
+      left: 585px;
+    }
+
+    &__text {
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    &__btns {
+      display: flex;
+      gap: 20px;
+    }
+  }
+}
