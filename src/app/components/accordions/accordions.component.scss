@@ -40,6 +40,8 @@
     border: 2px solid #f8e4da;
     border-radius: 20px;
     padding: 57px 40px;
+    background-color: none;
+    transition: 0.3s;
   }
 
   &__header {
@@ -69,9 +71,13 @@
   }
 }
 
-.active {
+.displayActive {
   // display: flex;
   max-height: 150px;
+}
+
+.backgroundActive {
+  background-color: #fbf8f4;
 }
 
 @media screen and (max-width: 1000px) {

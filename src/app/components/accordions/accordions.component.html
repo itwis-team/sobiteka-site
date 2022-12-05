@@ -4,6 +4,7 @@
     <li
       *ngFor="let item of accordions; let idx = index"
       class="accordion__item"
+      [ngClass]="{ backgroundActive: activeIdx === idx }"
     >
       <div class="accordion__header" (click)="setActive(idx)">
         <span>{{ idx + 1 + "." }}</span>
@@ -12,7 +13,10 @@
         </p>
         <img src="../../../assets/plus-icon.svg" alt="plus-icon" />
       </div>
-      <p class="accordion__content" [ngClass]="{ active: activeIdx === idx }">
+      <p
+        class="accordion__content"
+        [ngClass]="{ displayActive: activeIdx === idx }"
+      >
         {{ item.content }}
       </p>
     </li>
