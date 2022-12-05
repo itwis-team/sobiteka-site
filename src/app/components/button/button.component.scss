@@ -49,3 +49,9 @@
     margin: 0;
   }
 }
+
+@media screen and (max-width: 670px) {
+  .btn {
+    width: 191px;
+  }
+}

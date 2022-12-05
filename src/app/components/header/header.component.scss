@@ -1,9 +1,10 @@
 @import "../../../sass/variables";
 
 .header {
+  margin: auto;
+  padding: $padding-less-1920;
   position: relative;
   height: 100px;
-  padding: 0 130px;
   display: flex;
   align-items: center;
 
@@ -40,26 +41,24 @@
     background-image: url(../../../assets/hide-menu.svg);
     background-repeat: no-repeat;
   }
+}
 
-  @media screen and (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
+  .header {
     &__nav {
       gap: 30px;
     }
   }
 
   @media screen and (max-width: 1000px) {
-    &__nav {
-      display: none;
-    }
+    .header {
+      &__nav {
+        display: none;
+      }
 
-    &__menu-icon {
-      display: flex;
-    }
-  }
-
-  @media screen and (max-width: 769px) {
-    & {
-      padding: 0 92px;
+      &__menu-icon {
+        display: flex;
+      }
     }
   }
 }

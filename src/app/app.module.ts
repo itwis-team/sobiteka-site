@@ -9,6 +9,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { HideMenuComponent } from './components/hide-menu/hide-menu.component';
 import { MainLayoutComponent } from './components/main-layout/main-layout.component';
 import { StepsComponent } from './components/steps/steps.component';
+import { LastStepComponent } from './components/last-step/last-step.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { StepsComponent } from './components/steps/steps.component';
     StepsComponent,
     AccordionsComponent,
     FooterComponent,
+    LastStepComponent,
   ],
   imports: [BrowserModule],
   providers: [],

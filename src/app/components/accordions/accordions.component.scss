@@ -1,7 +1,9 @@
+@import "../../../sass/variables";
+
 .accordion {
-  padding: 0 130px;
-  max-width: 1180px;
   margin: auto;
+  padding: $padding-less-1920;
+  max-width: 1180px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,16 +47,8 @@
     width: 100%;
     display: flex;
     align-items: center;
+    gap: 10px;
     cursor: pointer;
-  }
-
-  &__header:hover {
-    opacity: 0.7;
-    transition: 0.7s;
-  }
-
-  span {
-    margin-right: 40px;
   }
 
   img {
@@ -67,11 +61,57 @@
 
   &__content {
     margin: 0;
-    padding-left: 59px;
+    padding-left: 23.77px;
     display: none;
   }
 }
 
 .active {
   display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+  .accordion {
+    &__title {
+      font-size: 40px;
+      line-height: 46px;
+    }
+
+    &__list {
+      font-size: 18px;
+      line-height: 28px;
+      gap: 20px;
+    }
+
+    &__item {
+      padding: 18px 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .accordion {
+    &__title {
+      font-size: 30px;
+      line-height: 34px;
+    }
+
+    &__list {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    &__item {
+      padding: 26px 10px;
+    }
+
+    span {
+      margin-right: 6px;
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
 }

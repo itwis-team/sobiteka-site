@@ -1,20 +1,18 @@
 @import "../../../sass/variables";
 
 .footer {
-  width: 100%;
   min-height: 248px;
-  margin: auto;
-  background-image: url(../../../assets/footer-background.svg);
+  background-image: url(../../../assets/footer-back-1920.svg);
   background-repeat: no-repeat;
   color: $color-text-white;
   display: flex;
-  justify-content: center;
   align-items: center;
 
   &__wrapper {
-    margin: 0;
-    padding: 60px 130px 0;
+    margin: auto;
+    padding: $padding-less-1920;
     max-width: 1180px;
+    padding-top: 60px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -67,12 +65,82 @@
   &__nav-item:hover {
     opacity: 0.7;
   }
+}
 
-  @media screen and (max-width: 1280px) {
-    .footer {
-      &__third-column {
-        flex-direction: column;
-      }
+@media screen and (max-width: 1280px) {
+  .footer {
+    &__third-column {
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .footer {
+    background-image: url(../../../assets/footer-back-1000.svg);
+    min-height: 381px;
+
+    &__wrapper {
+      flex-wrap: wrap;
+      margin: 0;
+    }
+
+    &__first-column {
+      order: 2;
+      max-width: 280px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &__second-column {
+      flex-direction: row;
+      order: 1;
+      width: 100%;
+      justify-content: space-between;
+      margin: 30px 0 50px;
+    }
+
+    &__third-column {
+      order: 3;
+      display: flex;
+      gap: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .footer {
+    background-image: url(../../../assets/footer-back-670.svg);
+    min-height: 655px;
+
+    &__wrapper {
+      flex-direction: column;
+      justify-content: center;
+      gap: 50px;
+    }
+
+    &__first-column {
+      max-width: 220px;
+      order: 3;
+      align-items: center;
+      text-align: center;
+      gap: 16px;
+    }
+
+    &__second-column {
+      min-width: 230px;
+      flex-direction: column;
+      order: 1;
+      width: auto;
+      justify-content: space-between;
+      margin: 0;
+    }
+
+    &__third-column {
+      order: 2;
+      display: flex;
+      gap: 20px;
     }
   }
 }
