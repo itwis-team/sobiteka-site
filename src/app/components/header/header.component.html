@@ -5,10 +5,6 @@
     <p class="header__link">Тарифный план</p>
     <p class="header__link">Частые вопросы</p>
   </nav>
-  <div class="header__menu-icon" (click)="toggleShowMenu()"></div>
-  <app-hide-menu
-    *ngIf="menuIsActive"
-    [menuIsActive]="menuIsActive"
-    [toggleShowMenu]="toggleShowMenu"
-  ></app-hide-menu>
+  <div class="header__menu-icon" (click)="toggleShow()"></div>
+  <app-hide-menu></app-hide-menu>
 </header>

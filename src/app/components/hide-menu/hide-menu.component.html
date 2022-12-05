@@ -1,4 +1,4 @@
-<div class="hide-menu" [ngClass]="{ active: menuIsActive }">
+<div class="hide-menu" [ngClass]="{ active: value }">
   <div class="hide-menu__container">
     <div class="hide-menu__top">
       <img
@@ -6,7 +6,7 @@
         alt="logo"
         class="hide-menu__logo"
       />
-      <div class="hide-menu__icon" (click)="toggleShowMenu()"></div>
+      <div class="hide-menu__icon" (click)="toggleShow()"></div>
     </div>
     <nav class="hide-menu__bottom">
       <p class="hide-menu__link">О приложении</p>
