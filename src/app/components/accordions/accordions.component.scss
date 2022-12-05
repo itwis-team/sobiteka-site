@@ -62,12 +62,16 @@
   &__content {
     margin: 0;
     padding-left: 23.77px;
-    display: none;
+    // display: none;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
   }
 }
 
 .active {
-  display: flex;
+  // display: flex;
+  max-height: 150px;
 }
 
 @media screen and (max-width: 1000px) {
